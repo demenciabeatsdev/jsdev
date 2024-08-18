@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Page Loader</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" onclick="loadPage('pages/page1.html')">Page 1</a></li>
-            <li><a href="#" onclick="loadPage('pages/page2.html')">Page 2</a></li>
-            <li><a href="#" onclick="loadPage('pages/page3.html')">Page 3</a></li>
-            <li><a href="#" onclick="loadPage('pages/page4.html')">Page 4</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dynamic Loader</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('pages/page1.html')">Page 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('pages/page2.html')">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('pages/page3.html')">Page 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('pages/page4.html')">Page 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div id="content">
-        <!-- El contenido cargado dinámicamente aparecerá aquí -->
-        <h2>Welcome to the Dynamic Page Loader</h2>
-        <p>Select a page from the menu to load its content here.</p>
+    <div class="container mt-4">
+        <div id="content">
+            <!-- El contenido cargado dinámicamente aparecerá aquí -->
+            <div class="text-center">
+                <h2>Welcome to the Dynamic Page Loader</h2>
+                <p>Select a page from the menu to load its content here.</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
